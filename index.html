@@ -6,16 +6,140 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Menu</title>
 </head>
-<body class="bg-black-200">
+<body class="bg-blue-200">
     <header>
-        <nav class="border border-blue-500 border-b-2 border-t-0 h-[50px] flex items-center justify-center shadow-md shadow-blue-400">
-            <ul class="flex gap-5">
-                <li><a class="hover:text-blue-200" href="index.html">Inicio</a></li>
-                <li><a class="hover:text-blue-200" href="nosotros.html">Nosotros</a></li>
-                <li><a class="hover:text-blue-200" href="contacto.html">Contacto</a></li>
+        <nav class="bg-black border border-blue-500 border-b-2 border-t-0 h-[70px] flex items-center justify-center shadow-md shadow-blue-400">
+            <ul class="flex gap-9">
+                <li><a class="hover:text-blue-200" href="index.html">Tipografia y texto</a></li>
+                <li><a class="hover:text-blue-200" href="colores.html">Colores,bordes y efectos</a></li>
+                <li><a class="hover:text-blue-200" href="espaciado.html">Espaciado y dimensiones</a></li>
+                <li><a class="hover:text-blue-200" href="flexbox.html">Flexbox y Grid</a></li>
+                <li><a class="hover:text-blue-200" href="posicion.html">Posicion e interaccion</a></li>
+                <li><a class="hover:text-blue-200" href="transformaciones.html">transiciones y animaciones</a></li>
             </ul>
         </nav>
     </header>
-    <h1>Hola :D</h1>
+
+    <main class="m-4 grid grid-cols-6 gap-5">
+        <section class="bg-blue-900 border rounded-lg">
+            <h2 class="bg-blue-100">Color del texto</h2>
+            <p class="text-green-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam excepturi eaque quidem similique doloribus impedit, qui iusto est rerum, minima nihil repudiandae velit? Eos, similique reiciendis quod dolorum facilis asperiores.</p>
+        </section>
+
+        <section class="bg-blue-900 border rounded-lg">
+            <h2 class="bg-blue-100">Sombra de texto</h2>
+            <p class="text-shadow-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam excepturi eaque quidem similique doloribus impedit, qui iusto est rerum, minima nihil repudiandae velit? Eos, similique reiciendis quod dolorum facilis asperiores.</p>
+        </section>
+
+        <section class="bg-blue-900 border rounded-lg">
+            <h2 class="bg-blue-100">alineacion de texto</h2>
+            <p class="text-right">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam excepturi eaque quidem similique doloribus impedit, qui iusto est rerum, minima nihil repudiandae velit? Eos, similique reiciendis quod dolorum facilis asperiores.</p>
+        </section>
+
+        <section class="bg-blue-900 border rounded-lg">
+            <h2 class="bg-blue-100">alinear ultima linea</h2>
+            <p class="[text-align-last:right]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam excepturi eaque quidem similique doloribus impedit, qui iusto est rerum, minima nihil repudiandae velit? Eos, similique reiciendis quod dolorum facilis asperiores.</p>
+        </section>
+
+        <section class="bg-blue-900 border rounded-lg">
+            <h2 class="bg-blue-100">Metodo de justificado</h2>
+            <p class="text-justify [text-justify:inter-word]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam excepturi eaque quidem similique doloribus impedit, qui iusto est rerum, minima nihil repudiandae velit? Eos, similique reiciendis quod dolorum facilis asperiores.</p>
+        </section>
+
+        <section class="bg-blue-900 border rounded-lg">
+            <h2 class="bg-blue-100">Decoracion de texto</h2>
+            <p class="underline">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam excepturi eaque quidem similique doloribus impedit, qui iusto est rerum, minima nihil repudiandae velit? Eos, similique reiciendis quod dolorum facilis asperiores.</p>
+        </section>
+
+        <section class="bg-blue-900 border rounded-lg">
+            <h2 class="bg-blue-100">color de la decoracion</h2>
+            <p class="underline decoration-green-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam excepturi eaque quidem similique doloribus impedit, qui iusto est rerum, minima nihil repudiandae velit? Eos, similique reiciendis quod dolorum facilis asperiores.</p>
+        </section>
+
+        <section class="bg-blue-900 border rounded-lg">
+            <h2 class="bg-blue-100">estilo de decoracion</h2>
+            <p class="underline decoration-dotted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam excepturi eaque quidem similique doloribus impedit, qui iusto est rerum, minima nihil repudiandae velit? Eos, similique reiciendis quod dolorum facilis asperiores.</p>
+        </section>
+
+        <section class="bg-blue-900 border rounded-lg">
+            <h2 class="bg-blue-100">grosor decoracion</h2>
+            <p class="underline decoration-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam excepturi eaque quidem similique doloribus impedit, qui iusto est rerum, minima nihil repudiandae velit? Eos, similique reiciendis quod dolorum facilis asperiores.</p>
+        </section>
+
+        <section class="bg-blue-900 border rounded-lg">
+            <h2 class="bg-blue-100">Transformacion de texto</h2>
+            <p class="uppercase">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam excepturi eaque quidem similique doloribus impedit, qui iusto est rerum, minima nihil repudiandae velit? Eos, similique reiciendis quod dolorum facilis asperiores.</p>
+        </section>
+
+        <section class="bg-blue-900 border rounded-lg">
+            <h2 class="bg-blue-100">desbordamiento del texto</h2>
+            <p class="truncate">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam excepturi eaque quidem similique doloribus impedit, qui iusto est rerum, minima nihil repudiandae velit? Eos, similique reiciendis quod dolorum facilis asperiores.</p>
+        </section>
+
+        <section class="bg-blue-900 border rounded-lg">
+            <h2 class="bg-blue-100">familia de fuentes (mono)</h2>
+            <p class="font-mono">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam excepturi eaque quidem similique doloribus impedit, qui iusto est rerum, minima nihil repudiandae velit? Eos, similique reiciendis quod dolorum facilis asperiores.</p>
+        </section>
+
+        <section class="bg-blue-900 border rounded-lg">
+            <h2 class="bg-blue-100">tamaño de fuente</h2>
+            <p class="text-xs">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam excepturi eaque quidem similique doloribus impedit, qui iusto est rerum, minima nihil repudiandae velit? Eos, similique reiciendis quod dolorum facilis asperiores.</p>
+        </section>
+
+        <section class="bg-blue-900 border rounded-lg">
+            <h2 class="bg-blue-100">grosor de fuente</h2>
+            <p class="font-semibold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam excepturi eaque quidem similique doloribus impedit, qui iusto est rerum, minima nihil repudiandae velit? Eos, similique reiciendis quod dolorum facilis asperiores.</p>
+        </section>
+
+        <section class="bg-blue-900 border rounded-lg">
+            <h2 class="bg-blue-100">estilo de fuente</h2>
+            <p class="italic">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam excepturi eaque quidem similique doloribus impedit, qui iusto est rerum, minima nihil repudiandae velit? Eos, similique reiciendis quod dolorum facilis asperiores.</p>
+        </section>
+
+        <section class="bg-blue-900 border rounded-lg">
+            <h2 class="bg-blue-100">espacio entre letras</h2>
+            <p class="tracking-widest">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam excepturi eaque quidem similique doloribus impedit, qui iusto est rerum, minima nihil repudiandae velit? Eos, similique reiciendis quod dolorum facilis asperiores.</p>
+        </section>
+
+        <section class="bg-blue-900 border rounded-lg">
+            <h2 class="bg-blue-100">espacio entre palabras</h2>
+            <p class="[word-spacing:0.4em]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam excepturi eaque quidem similique doloribus impedit, qui iusto est rerum, minima nihil repudiandae velit? Eos, similique reiciendis quod dolorum facilis asperiores.</p>
+        </section>
+
+        <section class="bg-blue-900 border rounded-lg">
+            <h2 class="bg-blue-100">altura de linea</h2>
+            <p class="leading-loose">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam excepturi eaque quidem similique doloribus impedit, qui iusto est rerum, minima nihil repudiandae velit? Eos, similique reiciendis quod dolorum facilis asperiores.</p>
+        </section>
+
+        <section class="bg-blue-900 border rounded-lg">
+            <h2 class="bg-blue-100">salto de linea</h2>
+            <p class="[line-break:anywhere]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam excepturi eaque quidem similique doloribus impedit, qui iusto est rerum, minima nihil repudiandae velit? Eos, similique reiciendis quod dolorum facilis asperiores.</p>
+        </section>
+
+        <section class="bg-blue-900 border rounded-lg">
+            <h2 class="bg-blue-100">salto de palabra</h2>
+            <p class="break-all">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam excepturi eaque quidem similique doloribus impedit, qui iusto est rerum, minima nihil repudiandae velit? Eos, similique reiciendis quod dolorum facilis asperiores.</p>
+        </section>
+
+        <section class="bg-blue-900 border rounded-lg">
+            <h2 class="bg-blue-100">division de palabras largas</h2>
+            <p class="wrap-break-word">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam excepturi eaque quidem similique doloribus impedit, qui iusto est rerum, minima nihil repudiandae velit? Eos, similique reiciendis quod dolorum facilis asperiores.</p>
+        </section>
+
+        <section class="bg-blue-900 border rounded-lg">
+            <h2 class="bg-blue-100">separacion de silabas</h2>
+            <p class="hyphens-auto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam excepturi eaque quidem similique doloribus impedit, qui iusto est rerum, minima nihil repudiandae velit? Eos, similique reiciendis quod dolorum facilis asperiores.</p>
+        </section>
+
+        <section class="bg-blue-900 border rounded-lg">
+            <h2 class="bg-blue-100">alineacion vertical</h2>
+            <p class="align-baseline">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam excepturi eaque quidem similique doloribus impedit, qui iusto est rerum, minima nihil repudiandae velit? Eos, similique reiciendis quod dolorum facilis asperiores.</p>
+        </section>
+
+        <section class="bg-blue-900 border rounded-lg">
+            <h2 class="bg-blue-100">espacio en blanco</h2>
+            <p class="whitespace-nowrap">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam excepturi eaque quidem similique doloribus impedit, qui iusto est rerum, minima nihil repudiandae velit? Eos, similique reiciendis quod dolorum facilis asperiores.</p>
+        </section>
+    </main>
 </body>
 </html>
